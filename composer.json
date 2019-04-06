@@ -1,0 +1,34 @@
+{
+    "name": "kato/fieldable",
+    "description": "Add fields and values dynamically to laravel eloquent model",
+    "authors": [
+        {
+            "name": "Kato",
+            "email": "katoyeung@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "^8.0",
+        "orchestra/testbench": "~3.8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kato\\Fieldable\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kato\\Fieldable\\Tests\\": "tests/"
+        },
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kato\\Fieldable\\FieldableServiceProvider"
+            ]
+        }
+    }
+}
